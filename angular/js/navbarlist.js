@@ -33,7 +33,7 @@ var app = angular.module("myApp",['ngRoute']);
     })
     .when("/login",
     {
-      templateUrl : "angular/app/login.html"
+      templateUrl : "angular/app/login1.html"
     })
     .when("/register",
     {
