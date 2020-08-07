@@ -143,42 +143,9 @@
                                         <div class="header-bottom-left-wrap">
                                             <!-- navigation menu -->
                                             <div class="header__navigation d-none d-lg-block">
-                                                <nav class="navigation-menu primary--menu">
-
-                                                    <ul>
-                                                        <li class="has-children has-children--multilevel-submenu">
-                                                            <a href="#!home"><span>Home</span></a>
-                                                        </li>
-                                                        <li class="has-children">
-                                                            <a href="inner-pages/creative/about-us.html"><span>About</span></a>
-                                                        </li>
-                                                        <li class="has-children">
-                                                            <a href="inner-pages/creative/services.html"><span>Services</span></a>
-                                                        </li>
-                                                        <li class="has-children has-children--multilevel-submenu">
-                                                            <a href="#"><span>Pages</span></a>
-                                                            <ul class="submenu">
-                                                                <li><a href="inner-pages/creative/team.html"><span>Team</span></a></li>
-                                                                <li><a href="inner-pages/creative/team-details.html"><span>Team Details</span></a></li>
-                                                                <li><a href="inner-pages/creative/services-details.html"><span>Services Details</span></a></li>
-                                                                <li><a href="inner-pages/creative/pricing-package.html"><span>Pricing Package</span></a></li>
-                                                                <li><a href="inner-pages/creative/clients-logo.html"><span>Clients Logo</span></a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="has-children has-children--multilevel-submenu">
-                                                            <a href="#"><span>Blog</span></a>
-                                                            <ul class="submenu">
-                                                                <li><a href="inner-pages/creative/blog-grid.html"><span>Blog Grid</span></a></li>
-                                                                <li><a href="inner-pages/creative/blog-left-sidebar.html"><span>Blog left sidebar</span></a></li>
-                                                                <li><a href="inner-pages/creative/blog-right-sidebar.html"><span>Blog right sidebar</span></a></li>
-                                                                <li><a href="inner-pages/creative/blog-details-full-width.html"><span>Blog details no sidebar</span></a></li>
-                                                                <li><a href="inner-pages/creative/blog-details-left-sidebar.html"><span>Blog details left sidebar</span></a></li>
-                                                                <li><a href="inner-pages/creative/blog-details-right-sidebar.html"><span>Blog details right sidebar</span></a></li>
-                                                            </ul>
-                                                        </li>
-                                                        <li class="has-children">
-                                                            <a href="inner-pages/creative/contact-us.html"><span>Contact</span></a>
-                                                        </li>
+                                                <nav class="navigation-menu primary--menu" ng-controller="myctrl">
+                                                    <ul class="nav">
+                                                        <li class="has-children" ng-repeat="x in navlist"><a class="nav-link" href="{{x.link}}">{{x.name}}</a></li>
                                                     </ul>
                                                 </nav>
                                             </div>
