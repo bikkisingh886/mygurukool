@@ -43,7 +43,7 @@ var app = angular.module("myApp",['ngRoute']);
     })
     .when("/requestbystudent",
     {
-      templateUrl : "angular/app/home.html"
+      templateUrl : "angular/app/std_request.html"
     })
     .when("/subject",
     {
