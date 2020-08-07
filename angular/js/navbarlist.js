@@ -4,8 +4,6 @@ var app = angular.module("myApp",['ngRoute']);
                {name:'Home',link:'#!home'},
                {name:'About',link:'#!about'},
                {name:'Contact',link:'#!contact'},
-               {name:'Login',link:'#!login'},
-               {name:'Register',link:'#!register'},
                {name:'RequestByTeacher',link:'#!requestbyteacher'},
                {name:'RequestByStudent',link:'#!requestbystudent'},
                {name:'Subjects',link:'#!subject'}
@@ -41,7 +39,7 @@ var app = angular.module("myApp",['ngRoute']);
     })
     .when("/requestbyteacher",
     {
-      templateUrl : "angular/app/home.html"
+      templateUrl : "angular/app/login.html"
     })
     .when("/requestbystudent",
     {
